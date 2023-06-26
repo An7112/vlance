@@ -5,20 +5,23 @@
 .content-container__area {
     max-width: 100%;
     padding-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     text-align: center;
     margin: 0 auto;
     display: grid;
     gap: 50px;
     align-items: center;
+    margin-bottom: 56px;
     grid-template-columns: 1fr;
 }
 
-.class-button{
+.class-button {
     display: none;
     grid-column: span 5 / span 5;
 }
 
-.class-button button{
+.class-button button {
     padding: 12px 16px;
     color: white;
     font-size: 18px;
@@ -44,6 +47,10 @@
     grid-column: span 2 / span 2;
     position: relative;
 }
+.content-text-dsc{
+    padding-bottom: 2rem;
+    font-size: 22px;
+}
 
 .content-container__area .content.right {
     gap: 12px;
@@ -51,7 +58,7 @@
     grid-column: span 3 / span 3;
 }
 .content-title {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 700;
     width: 100%;
 }
@@ -70,7 +77,7 @@
 .frame-button {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 16px;
 }
 
 .button-app {
@@ -79,7 +86,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    padding: 4px;
+    padding: 8px 16px;
     border-radius: 6px;
     background-color: black;
 }
@@ -110,7 +117,7 @@
 
 .title-page {
     padding-top: 6rem;
-    font-size: 64px;
+    font-size: 55px;
     margin-top: 1rem;
     font-weight: 700;
     color: #6c5dd3;
@@ -168,12 +175,12 @@
 }
 .content__list__text h3 {
     text-align: left;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
 }
 .content__list__text p {
     text-align: left;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -230,15 +237,15 @@
 }
 
 .grid-item__dsc {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     color: black;
     text-align: left;
 }
 @media (min-width: 1080px) {
     .content-container__area {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 0;
+        padding-left: 0;
         grid-template-columns: repeat(5, minmax(0, 1fr));
         max-width: 1536px;
         gap: 12rem;
@@ -253,8 +260,14 @@
         grid-template-columns: 1fr;
     }
 }
+@media screen and (max-width: 1536px) {
+    .content-container__area {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
 @media screen and (max-width: 820px) {
-    .class-button{
+    .class-button {
         display: block;
     }
     .frame-button {
@@ -310,13 +323,14 @@
         height: 26px;
     }
 
-    .content__list__text{
+    .content__list__text {
         align-items: center;
     }
 }
 
-@media (max-width: 768px) {
-    .content-container__area{
-      margin-bottom: 56px;
+@media screen and (max-width: 414px) {
+    .content-container__area {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
-  }
+}
