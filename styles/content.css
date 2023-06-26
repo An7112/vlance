@@ -235,15 +235,17 @@
     color: black;
     text-align: left;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1080px) {
     .content-container__area {
+        padding-right: 2rem;
+        padding-left: 2rem;
         grid-template-columns: repeat(5, minmax(0, 1fr));
-        width: 1536px;
+        max-width: 1536px;
         gap: 12rem;
     }
 
     .content-container__area {
-        width: 1536px;
+        max-width: 1536px;
     }
 
     .content-container__area.single {
