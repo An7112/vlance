@@ -235,8 +235,7 @@
     color: black;
     text-align: left;
 }
-
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
     .content-container__area {
         grid-template-columns: repeat(5, minmax(0, 1fr));
         width: 1536px;
