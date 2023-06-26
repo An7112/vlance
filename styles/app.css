@@ -98,8 +98,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   gap: 16px;
-  width: 80%;
+  padding: 0 4rem;
 }
 @media (max-width: 768px) {
   .header .block{
@@ -117,5 +118,17 @@ body {
   }
   .content-container__area{
     margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header__frame-layout{
+    padding: 0 11rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header__frame-layout{
+    padding: 0 1rem;
   }
 }
