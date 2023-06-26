@@ -107,4 +107,7 @@ body {
   .footer{
     display: flex;
   }
+  .content-container__area{
+    margin-bottom: 56px;
+  }
 }

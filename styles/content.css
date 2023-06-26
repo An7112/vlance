@@ -313,3 +313,9 @@
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .content-container__area{
+      margin-bottom: 56px;
+    }
+  }
